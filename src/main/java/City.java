@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class City {
     public int id;
     public String name;
@@ -33,4 +35,6 @@ public class City {
     public String getDistrict() {
         return district;
     }
+
+    Comparator<City> comparator = (o1, o2) -> o1.getName().compareTo(o2.getName());
 }
